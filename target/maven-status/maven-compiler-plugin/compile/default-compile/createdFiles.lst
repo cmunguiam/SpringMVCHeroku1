@@ -1,0 +1,6 @@
+pe\camm\springhibernatecrud\dao\CountryDAO.class
+pe\camm\springhibernatecrud\model\Country.class
+pe\camm\springhibernatecrud\controller\MainController.class
+pe\camm\springhibernatecrud\service\CountryService.class
+pe\camm\springhibernatecrud\controller\SimpleControler.class
+pe\camm\springhibernatecrud\controller\CountryController.class
