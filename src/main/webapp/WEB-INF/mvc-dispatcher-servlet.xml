@@ -12,7 +12,8 @@
 
 	<context:component-scan base-package="pe.camm.springhibernatecrud" />
 
-	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/views/</value>
 		</property>
@@ -21,13 +22,22 @@
 		</property>
 	</bean>
 
+<!-- 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" -->
+<!-- 		destroy-method="close"> -->
+<!-- 		<property name="driverClassName" value="com.mysql.jdbc.Driver" /> -->
+<!-- 		<property name="url" -->
+<!-- 			value="jdbc:mysql://localhost:3306/springhibernatecrud" /> -->
+<!-- 		<property name="username" value="root" /> -->
+<!-- 		<property name="password" value="admin" /> -->
+<!-- 	</bean> -->
+
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/springhibernatecrud" />
-		<property name="username" value="root" />
-		<property name="password" value="admin" />
+			value="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_efb0807d42873a6?reconnect=true" />
+		<property name="username" value="bc2ad798879d91" />
+		<property name="password" value="0ed85ebc" />
 	</bean>
 
 	<!-- Hibernate 4 SessionFactory Bean definition -->
